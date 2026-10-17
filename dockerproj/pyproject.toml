@@ -1,56 +1,11 @@
 [tool.poetry]
-name = "my-poetry-project"
+name = "python-container-runner"
 version = "0.1.0"
-description = "Flask-based microservice for handling API requests"
-authors = ["Development Team <dev-team@company.com>"]
-readme = "README.md"
-license = "MIT"
-homepage = "https://github.com/company/my-poetry-project"
-repository = "https://github.com/company/my-poetry-project"
-keywords = ["flask", "api", "microservice"]
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.12"
-]
+description = "A small Flask example for an explicit Python container launcher"
+authors = ["Deavyansh Gautam"]
+package-mode = false
+repository = "https://github.com/devgprime/Dockerized-Python-Runner"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-flask = "^2.3.2"
-gunicorn = "^21.2.0"
-python-dotenv = "^1.0.0"
-requests = "^2.31.0"
-pydantic = "^2.5.2"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.3"
-black = "^23.11.0"
-flake8 = "^6.1.0"
-mypy = "^1.7.1"
-pytest-cov = "^4.1.0"
-
-[tool.poetry.scripts]
-start = "main:main"
-dev = "main:dev"
-test = "pytest:main"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.black]
-line-length = 88
-target-version = ['py312']
-include = '\.pyi?$'
-
-[tool.mypy]
-python_version = "3.12"
-strict = true
-warn_return_any = true
-warn_unused_configs = true
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
-addopts = "-v --cov=src --cov-report=term-missing"
+flask = "3.1.2"
