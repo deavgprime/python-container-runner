@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A small Flask example for an explicit Python container launcher"
 authors = ["Deavyansh Gautam"]
 package-mode = false
-repository = "https://github.com/devgprime/Dockerized-Python-Runner"
+repository = "https://github.com/devgprime/python-container-runner"
 
 [tool.poetry.dependencies]
 python = "^3.12"
